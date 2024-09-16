@@ -1,0 +1,1468 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+}
+.topbar button{
+    /* background-color: #c00 !important; */
+    /* background-color: #ECBD00 !important; */
+    border: none;
+    padding: 6px;
+    letter-spacing: 1px;
+    color: black;
+}
+.primary-header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+.bg-image{
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.628), rgba(0, 0, 0, 0.605)), url('../img/hero/hero_bg_1_1.jpg');
+    height: 450px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.navbar-toggler-icon{
+    font-size: 14px;
+  color: white;
+}
+.navbar-brand img{
+    transform: scale(1.5);
+}
+.navbar-nav .nav-item{
+    padding-left: 20px;
+    font-weight: 500;
+}
+/* banner section */
+.hero{
+    background:linear-gradient(rgba(0, 0, 0, 0.427), rgba(0, 0, 0, 0.509)), url('../img/hero/hero_bg_1_1.jpg');
+    height: 450px;
+    background-size: cover;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.hero .hero-title p{
+    font-size: 33px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    color: white;
+}
+.hero .hero-title h1{
+    font-family: "Concert One", sans-serif;
+    font-size: 100px;
+    font-weight: 400;
+    color: white;
+    margin-top: -30px;
+}
+
+@media(max-width:768px){
+    .navbar-brand img{
+        transform: scale(1);
+    }
+    .hero .hero-title h1{
+        font-size: 60px;
+    }
+    .hero .hero-title p{
+        font-size: 30px;
+    }
+}
+
+
+.hero .booking{
+    background-color: rgba(0, 0, 0, 0.518);
+    /* padding: 10px; */
+}
+
+.login-section{
+    background:linear-gradient(to right, rgba(0, 0, 0, 0.734), rgba(0, 0, 0, 0.671)), url('../img/hero/hero_bg_1_1.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center; 
+}
+.login-section .card{
+    margin-top: 80px !important;
+}
+
+.register-section{
+    background:linear-gradient(to right, rgba(0, 0, 0, 0.734), rgba(0, 0, 0, 0.671)), url('../img/hero/hero_bg_1_1.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.register-section .card{
+    margin-top: 50px !important;
+}
+
+.best-places img{
+    height: 300px;
+    object-fit: cover;
+}
+.best-places .item {
+    position: relative;
+    overflow: hidden;
+ 
+}
+.best-places .item  img{
+    transition: all 0.5s linear;
+}
+.best-places .item img:hover {
+    transform: scale(1.2);
+}
+
+.best-places .item .strip{
+    position: absolute;
+    width: 100%;;
+    color: rgb(0, 0, 0);
+    left: 0;
+    bottom: 10px;
+    background-color: rgb(246 246 246 / 82%);
+    padding: 10px;
+    text-align: center;
+}
+.tour-places{
+    margin-top: 80px !important;
+}
+.tripPlan{
+    margin-top: 100px !important;
+    margin-bottom: 80px !important;
+}
+.img-box3 {
+    position: relative;
+}
+
+.img-box3 .img1 img {
+    border-radius: 24px;  
+}
+
+.img-box3 .img2 {
+    position: absolute;
+    top: 20%;
+    right: 12%;
+
+    
+}
+.movingX{
+    animation: movingX 8s linear infinite;
+}
+
+
+@keyframes movingX {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(50px);
+     }
+     100%{
+        transform: translateX(0);
+     }
+
+}
+.img-box3 .img2 img {
+    border-radius: 24px;
+    border: 5px solid white;
+}
+
+
+@media(max-width:768px){
+    .img-box3  img{
+        width: 100%;
+    }
+    .tripPlan .col-xl-5{
+        margin-top: 90px;
+    }
+    .best-places img{
+        height: 200px;
+    }
+    .tour-places h2{
+        font-size: 20px !important;
+    }
+    .tour-places h2 span{
+        font-size: 22px !important;
+    }
+    .tour-places h2 span p{
+        font-size: 12px !important;
+    }
+}
+
+
+
+.img-box3 .img2::before{
+    position: absolute;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+}
+.tripPlan .title-area .sub-title{
+    color: orange;
+    font-size: 16px;
+    font-size: bold;
+}
+.tripPlan .title-area .sec-title{
+    font-size: 44px;
+    font-weight: 700;
+}
+
+
+.about-item.style2 .about-item_img {
+    background-color: #e9f6f9;
+}
+
+.about-item {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 16px;
+    max-width: 400px;
+}
+.about-item:not(:last-child) {
+    margin-bottom: 30px;
+}
+.about-item_img img {
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+.about-item_img {
+    min-width: 72px;
+    height: 72px;
+    line-height: 72px;
+    border-radius: 50%;
+    text-align: center;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+.about-item_img:hover img {
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.box-title {
+    font-size: 22px;
+    line-height: 1.417;
+    font-weight: 500;
+    margin-top: -0.32em;
+    margin-bottom: 7px;
+}
+.holiday-packages{
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.808), rgba(1, 0, 0, 0.648)), url('../img/hero/hero_bg_3_3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.holiday-packages .card{
+    border: none !important;
+}
+
+.holiday-packages h3{
+    font-size: 28px;
+    font-weight: 600;
+    color: white;
+}
+
+.holiday-packages-swiper .items{
+    position: relative;
+}
+
+.holiday-packages-swiper .duration{
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    color: rgb(0, 0, 0);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.holiday-packages-swiper .duration .duration-days{
+    width: 50%;
+    background-color: white;
+    padding: 8px;
+}
+.holiday-packages-swiper .duration .features{
+    width: 20%;
+    background-color: white;
+    padding: 8px;
+}
+.holiday-packages-swiper .duration i{
+    font-size: 15px;
+    color: rgb(255, 170, 0);
+}
+.holiday-packages-swiper .desc .title{
+    color: black;
+    font-size: 20px;
+}
+.holiday-packages-swiper .desc .sub-title{
+    text-transform: uppercase;
+}
+.holiday-packages-swiper .desc .sub-titles{
+    
+    font-size: 12px;
+    color:black;
+    font-weight: bold;
+}
+.holiday-packages-swiper .desc .price span:first-child{
+    font-size: 25px;
+    font-weight: bold;
+    position: relative;
+    top: -15px;
+    /* color: orange; */
+}
+@media(max-width:768px){
+.booking button{
+    width: 100%;
+    font-size: 13px !important;
+   }
+
+   .mobile_tabs{
+    flex-direction: column !important;
+    gap: 10px;
+   }
+   .mobile_tabs  input{
+    width: 100% !important;
+    border-top-right-radius: 50rem !important;
+    border-bottom-right-radius: 50rem !important;
+   }
+
+   .mobile_tabs button{
+    width: 100% !important;
+    border-radius: 50rem !important;
+    padding: 1rem !important;
+
+   }
+   .mobile_tabs select{
+    width: 100% !important;
+    border-radius: 50rem !important;
+    padding: 1rem !important;
+   }
+   .mobile_tabs_button li{
+    width: 50% !important;
+   }
+ 
+    .holiday-packages-swiper .duration .duration-days{
+       
+        width: 48% !important;
+    }
+    .holiday-packages-swiper .duration .duration-days small{
+        font-size: 14px !important;
+        font-weight: 500 !important;
+    }
+    .holiday-packages-swiper .duration .features {
+        width: 31% !important;
+    }
+    .holiday-packages-swiper .duration .features i{
+        padding-left: 8px;
+    }
+    .tripPlan .title-area .sec-title {
+        font-size: 25px !important;
+        font-weight: 600;
+    }
+    .tripPlan  .sec-text {
+        font-size: 12px !important;
+    }
+    .box-title{
+        font-size: 18px !important;
+    }
+    .about-item_text{
+        font-size: 12px !important;
+    }
+    .about-item-wrap{
+        margin-top: 25px !important;
+    }
+    .holiday-packages h3 {
+        font-size: 20px !important;
+        font-weight: 400 !important;
+    }
+    .holiday-packages-swiper .desc .sub-title {
+        text-transform: uppercase;
+        font-size: 14px !important;
+        color: #909090 !important;
+    }
+    .holiday-packages-swiper .desc .title {
+        color: black;
+        font-size: 16px !important;
+    }
+    .holiday-packages-swiper .desc .price span:first-child {
+        font-size: 18px !important;
+        font-weight: 600 !important;
+    }
+}
+
+
+
+
+
+/* about page */
+
+
+
+  .about-section{
+    background:linear-gradient(rgba(0, 0, 0, 0.452), rgba(0, 0, 0, 0.452)),  url('../images/Banner\ About\ Us.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 350px;    
+}
+
+
+.about-section h1{
+    color: white;
+    text-align: center;
+    padding: 200px 0px;
+    align-items: center;
+    font-size: 70px;
+    font-weight: 700;
+}
+
+   
+.aboutslider .swiper-wrapper{
+    gap: 20px;
+}
+
+.aboutslider  .swiper-slide img{
+object-fit: cover;
+height: 150px;
+margin: 20px;
+
+}
+
+
+.Abig-img img{
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    display: block;
+}
+
+
+
+.row h2{
+    text-align: center;
+    font-size: 60px;
+    font-weight: 600;
+    margin: 50px 0px;
+}
+
+.aboutp-head{
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+    border-bottom: 3px solid black;
+}
+
+.aboutP-Content{
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.important-headline{
+    color: rgb(231, 210, 21);
+    font-size: 16px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.about-f{
+    font-size: 16px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.top-4c {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.top-4p{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .about-section{
+        height: 400px;
+    }
+
+    .about-section h1{
+        font-size: 50px;
+    }
+
+    #about-title{
+        font-size: 45px;
+    }
+    
+    .aboutp-head{
+        font-size: 16px;
+    }
+
+    .top-4c{
+        text-align: center;
+        font-size: 35px;
+    }
+    
+    .top-4p{
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* service- section */
+
+
+.service-section{
+    background:linear-gradient(rgba(0, 0, 0, 0.492), rgba(0, 0, 0, 0.508)),  url('../images/service-banner.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 350px;
+    
+}
+
+
+
+.service-section h1{
+ font-size: 70px;
+ font-weight: 700;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ color: white;
+ flex-direction: column;
+ padding: 200px 0px;
+}
+
+
+
+
+.service-second-section h2{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+
+.welcome-head{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.welcome-page{
+    line-height: 30px;
+}
+
+
+
+.services-swiper{
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.desc{
+ text-align: center;
+ line-height: 30px;
+
+}
+
+.swiper-tophead{
+
+    font-size: 25px;
+    font-weight: 700;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    
+}
+
+.swiper-wrapper  > div{
+    width: 100%;
+    transition: all 0.5s ease-in;
+ }
+ 
+ .swiper-wrapper > div:nth-child(1){
+    transition: all 0.5s ease;
+ }
+
+ .swiper-wrapper > div:nth-child(1):hover{
+    transform: scale(1.1);
+ }
+
+
+ .swiper-wrapper > div:nth-child(2){
+    transition: all 0.5s ease;
+ }
+
+ .swiper-wrapper > div:nth-child(2):hover{
+    transform: scale(1.1);
+ }
+
+
+ .swiper-wrapper > div:nth-child(3){
+    transition: all 0.5s ease;
+ }
+
+ .swiper-wrapper > div:nth-child(3):hover{
+    transform: scale(1.1);
+ }
+
+
+
+ .swiper-wrapper > div:nth-child(4){
+    transition: all 0.5s ease;
+ }
+
+ .swiper-wrapper > div:nth-child(4):hover{
+    transform: scale(1.1);
+ }
+
+
+ .swiper-wrapper > div:nth-child(5){
+    transition: all 0.5s ease;
+ }
+
+ .swiper-wrapper > div:nth-child(5):hover{
+    transform: scale(1.1);
+ }
+
+
+
+
+@media only screen and (max-width: 600px) {
+    .service-section{
+        background:linear-gradient(rgba(0, 0, 0, 0.192), rgba(0, 0, 0, 0.358)),  url('../images/service-banner.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 400px;
+        
+    }
+
+    
+.service-section h1{
+    font-size: 40px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 200px 0px;
+   }
+
+   .service-second-section h2{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+
+.welcome-head{
+    font-size: 25px;
+    font-weight: 700;
+}
+
+
+.welcome-page{
+    line-height: 30px;
+    padding: 10px 10px;
+}
+
+.services-swiper{
+    font-size: 35px;
+    font-weight: 700;
+    text-align: center;
+}
+
+
+   
+.desc{
+ text-align: center;
+ padding: 20px 10px;
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Contact-us- section */
+
+
+.Contact-section{
+    height: 450px;
+    background: linear-gradient(rgba(0, 0, 0, 0.066), rgba(0, 0, 0, 0.355)),  url('../images/contact-banner.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.Contact-section h1{
+    font-size: 70px;
+    font-weight: 700;
+    color: white;
+   }
+   
+   
+
+   .contact-container{
+        height: 700px;
+        background-color: rgba(204, 225, 229, 0.759);    
+   }
+   
+   
+   .form-container{
+    background-color:gainsboro;
+    height: 600px;
+   }
+
+   
+
+.list-group-item{
+    padding: 30px 30px;
+    border: 2px solid black;
+}
+
+
+.li-content{
+    padding: 0px 40px;
+}
+
+.MS{
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.location-head{
+ font-size: 30px;
+ font-weight: 700;
+ text-align: center;
+}
+
+.icon-head{
+    font-weight: 700;
+    font-size: 18px;
+}
+
+@media only screen and (max-width: 600px) {
+    .Contact-section{
+        height: 400px;
+        background: linear-gradient(rgba(0, 0, 0, 0.066), rgba(0, 0, 0, 0.355)),  url('../images/contact-banner.jpeg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .Contact-section h1{
+        font-size: 50px;
+       }
+
+       .location-head{
+        font-size: 23px;
+       }
+
+       .location-img{
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+       }
+
+       .card-body{
+        text-align: center;
+       }
+
+       .icon{
+        align-items: center;
+        padding: 20px 0px;
+       }
+
+       
+       .text-muted{
+         font-size: 10px;
+         text-align: center;
+       }
+       
+    }
+
+ 
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Career- section */
+
+
+ 
+.Career-section{
+    height: 400px;
+    background: linear-gradient(rgba(0, 0, 0, 0.468), rgba(0, 0, 0, 0.485)),  url('../images/career-banner.avif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.career-head {
+    font-size: 70px;
+    font-weight: 700;
+    color: white;
+
+   }
+   
+
+
+.TMP{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+
+ .Tourism-translate{
+    transform: translateX(-20%);
+}
+
+ .Tourism-secondbox{
+    transform: translateX(20%);
+}
+  
+
+
+@media only screen and (max-width: 600px) {
+
+    .Career-section{
+        height: 400px;
+        width: 100%;
+        background: linear-gradient(rgba(0, 0, 0, 0.066), rgba(0, 0, 0, 0.355)),  url('../images/career-banner.avif');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    
+.career-head {
+    font-size: 45px;
+    font-weight: 700;
+    color: white;
+
+   }
+
+   .card-body{
+    justify-content: center;
+    text-align: center;
+   }
+
+   .Tourism-translate{
+    transform: translateX(-0%);
+}
+  
+
+    
+
+}
+
+
+
+
+
+
+/* Membership- section */
+
+
+ 
+.Membership-section{
+    height: 500px;
+    background: linear-gradient(rgba(0, 0, 0, 0.582), rgba(0, 0, 0, 0.478)),  url('../images/MEMBERSHIP-BANNER.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+
+
+.Membership-head{
+    text-align: center;
+    font-size: 70px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+   }
+   
+   
+  .Membership-section p{
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+}
+
+
+.Membership-Buy{
+        height: 550px;
+        background: linear-gradient(rgba(0, 0, 0, 0.67), rgba(0, 0, 0, 0.719)),  url('../images/membership-B-buy.jpeg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+       
+    }
+  
+   
+    
+ /* membership card designs */
+ .flex-row{
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+
+ }
+ .flex-row > div{
+    width: 100%;
+    transition: all 0.5s ease-in;
+ }
+ 
+ .flex-row > div:nth-child(1){
+   background-image: url('../images/bronze.jpg');
+    background-color: white;
+    background-position: top center;
+    transition: all 0.5s ease;
+ }
+
+ .flex-row > div:nth-child(1):hover{
+    background-color: #909090;
+    transform: scale(1.1);
+ }
+
+
+ .flex-row > div:nth-child(2){
+    background-image: url('../images/Silver-plan-img.avif');
+ }
+
+  
+ .flex-row > div:nth-child(2):hover{
+    transform: scale(1.1);
+ }
+
+
+
+
+
+ .flex-row > div:nth-child(3){
+    background-image: url('../images/gold-plan-img.avif');
+ }
+
+
+ 
+ .flex-row > div:nth-child(3):hover{
+    transform: scale(1.1);
+ }
+
+
+
+
+
+
+ .flex-row > div:nth-child(4){
+    background-image: url('../images/platinum-image.webp');
+ }
+
+
+ 
+ .flex-row > div:nth-child(4):hover{
+    transform: scale(1.1);
+ }
+
+
+
+
+ .flex-row > div:nth-child(5){
+    background-image: url('../images/daimond-img.jpg');
+ }
+
+
+ .flex-row > div:nth-child(5):hover{
+    transform: scale(1.1);
+
+}
+ 
+
+
+ .flex-row .membership-card{
+    padding: 40px 0px;
+ }
+
+ .flex-row .membership-card h5{
+    background-color: #fff;
+    padding: 15px 5px;
+    border-radius: 100px;
+    width: 60%;
+    margin: 30px auto;
+ }
+ .flex-row .membership-card .price{
+    font-weight: bold;
+    margin-bottom: 30px;
+ }
+ .flex-row .membership-card button{
+    background-color: #fff;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 0px;
+ }
+
+
+
+
+    
+       
+       
+
+   .membership-card{
+     width: 100%;
+     height: 100%;
+     text-align: center;
+   }
+  
+   .title{
+    font-size: 25px;
+   }
+
+   .membership-heading {
+font-size: 15px !important;
+   }
+
+   
+   .Membership-head{
+       text-align: center;
+       font-size: 70px;
+       font-weight: 700;
+      }
+
+      .Membership-Page{
+        font-size: 21px;
+        font-weight: 700;
+        text-align: center;
+        padding: 0px 30px;
+        line-height: 30px;
+    }
+    
+    .But-btn{
+        font-size: 15px !important;
+    }
+
+  
+
+  
+ @media only screen and (max-width: 600px) {
+    .flex-row{
+      flex-direction: column !important;
+    }
+
+    .Membership-Buy{
+        height: 100%;
+        background: linear-gradient(rgba(0, 0, 0, 0.227), rgba(0, 0, 0, 0.195)),  url('../images/membership-B-buy.jpeg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+       
+    }
+
+    
+    .Membership-section{
+        height: 400px;
+        background: linear-gradient(rgba(0, 0, 0, 0.582), rgba(0, 0, 0, 0.478)),  url('../images/MEMBERSHIP-BANNER.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        
+    }
+
+    .Membership-head{
+        font-size: 40px;
+    }
+
+    .membership-card{
+        margin: 13px 0px;
+    }
+
+    .Membership-Page{
+        font-size: 14px;
+    } 
+
+ }
+
+
+    
+
+
+
+
+
+   
+/* Blog- section */
+
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .swiper {
+    width: 100%;
+    height: 300px;
+    margin: 20px auto;
+  }
+
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer */
+.footer{
+    background-color: #101429;
+    color: white;
+    padding: 80px 0px 0px 40px;
+}
+.footer .SocialList a{
+    padding:10px 0px ;
+    color: white;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    border-radius: 100px;
+    text-align: center;
+    background-color: orange;
+}
+.footer .SocialList i {
+    font-size: 16px;
+}
+.footer .SocialList a:nth-child(1):hover{
+    background-color: 	#1877F2;
+}
+.footer .SocialList a:nth-child(2):hover{
+    background-color: 	#0077B5;
+}
+.footer .SocialList a:nth-child(3):hover{
+    background-color: 	#FF0000;
+}
+
+.footer .SocialList a:nth-child(4):hover{
+    background-color: #962fbf;
+}
+.footer .quick-links h5{
+    font-size: 20px;
+}
+.footer .quick-links ul li{
+    padding: 8px 0px;
+}
+.footer .quick-links ul  li a{
+    text-decoration: none;
+    color: white;
+}
+.footer  .address i{
+    color: rgb(255, 190, 68);
+    font-size: 16px;
+    padding: 3px;
+
+}
+
+
+
+
+
+
+
+
+
+/* Terms-&-Condition- section */
+
+
+.Terms-Condition-section{
+    background: linear-gradient(rgba(0, 0, 0, 0.475), rgba(0, 0, 0, 0.3)),  url('../images/term-c-banner.avif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+
+ .Terms-Condition-section h1{
+    font-size: 70px;
+    font-weight: 800;
+    color: white;
+ }
+
+#tch{
+    font-size: 45px;
+}
+
+ .term-condition-pages h2{
+    margin: 30px 0px;
+    font-size: 23px;
+    font-weight: 600;
+ }
+
+@media only screen and (max-width: 600px) {
+
+    .Terms-Condition-section{
+        background: linear-gradient(rgba(0, 0, 0, 0.475), rgba(0, 0, 0, 0.3)),  url('../images/term-c-banner.avif');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        justify-content: center;
+        align-items: center;
+        height: 300px;
+        display: flex;
+    }
+
+    .Terms-Condition-section h1{
+        font-size: 25px;
+        font-weight: 800;
+        color: white;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+     }
+
+     .content-header{
+        font-size: 25px !important;
+     }
+
+     .content-page{
+        text-align: center;
+        font-weight: 600;
+        font-size: 15px;
+        margin-bottom: 50px;
+     }
+
+      .term-condition-pages h2{
+       
+        font-size: 15px;
+        font-weight: 700;
+        padding: 15px 10px;
+     }
+
+     .similer-pagecontent{
+        margin: 0px 20px;
+     }
+}
+
+
+
+
+
+
+/* refund-policy- section */
+
+
+.Refund-policy-section{
+    background: linear-gradient(rgba(0, 0, 0, 0.562), rgba(0, 0, 0, 0.468)),  url('../images/refund-policy-banner.avif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    height: 450px;
+}
+
+ 
+ .Refund-policy-section h1{
+    font-size: 70px;
+    font-weight: 800;
+    color: white;
+ }
+
+  .refundp-header{
+
+    font-size: 40px;
+    font-weight: 700;
+ }
+
+
+   @media only screen and (max-width: 600px) {
+
+    .Refund-policy-section{
+        background: linear-gradient(rgba(0, 0, 0, 0.475), rgba(0, 0, 0, 0.3)),  url('../images/refund-policy-banner.avif');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        justify-content: center;
+        align-items: center;
+        height: 300px;
+    }
+    
+
+    .Refund-policy-section h1{
+        font-size: 40px;
+        font-weight: 800;
+        color: white;
+     }
+    
+     .refundp-header{
+
+        font-size: 30px;
+    }
+    
+   .lead{
+    font-size: 10px;
+   }
+
+  
+}
+
+
+
+
+
+.privacy-policy-section{
+
+    background:   url('../images/privacy-policy-banner.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+
+ 
+ .privacy-policy-section h1{
+    color: white;
+    font-weight: 700;
+    font-size: 70px;
+ }
+
+ @media only screen and (max-width: 600px) {
+
+    .privacy-policy-section h1{
+        color: white;
+        font-weight: 700;
+        font-size: 40px;
+     }
+
+     .privacy-policy-section{
+        background:   url('../images/privacy-policy-banner.webp');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        justify-content: center;
+        align-items: center;
+        height: 300px;
+    }
+
+   
+     
+
+ }
+
+ 
