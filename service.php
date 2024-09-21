@@ -42,8 +42,12 @@
             </div>
         </div>
 
-        <div class="container ">
-            <h4 class="services-swiper mt-5 mb-5">Our Services</h4>
+
+
+
+
+        <div class="container-fluid ">
+            <h4 class="services-swiper mt-5 mb-3">Our Services</h4>
             <div class="row">
 
 
@@ -53,17 +57,14 @@
                 <div class="swiper  serviceSlider px-3">
                     <div class="swiper-wrapper">
 
-                        
-
-
-
-                        <div class="swiper-slide">
+                    
+                        <div class="swiper-slide ">
                             <div class="card card-body p-0">
                                   <img src="images/service2.jpeg" width="100%" height="100%"  alt="">
-                                  <div class="desc py-3 px-3">
+                                  <div class="desc py-2 px-3">
                                     <h5 class="swiper-tophead">Travel Planning Assistance</h5>
                                       <p>
-                                      Let our dedicated team of travel experts assist you in planning your dream vacation. From personalized itinerary recommendations to booking flights and activities, we're here to ensure every aspect of your trip is seamless and stress-free.</p>
+                                      Let our dedicated team of travel experts assist you in planning your dream vacation. From personalized itinerary recommendations to booking flights and activities, we're here to ensure every aspect of your trip is seamless and stress-free. recommendations. Whether you're planning a romantic bdget your trip.</p>
                                   </div>
                               </div>
                             </div>

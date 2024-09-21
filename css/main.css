@@ -156,6 +156,7 @@
 }
 
 
+
 @keyframes movingX {
     0% {
         transform: translateX(0);
@@ -406,11 +407,11 @@
 
 
   .about-section{
-    background:linear-gradient(rgba(0, 0, 0, 0.452), rgba(0, 0, 0, 0.452)),  url('../images/Banner\ About\ Us.jpg');
+    background:linear-gradient(rgba(0, 0, 0, 0.218), rgba(0, 0, 0, 0.284)),  url('../images/about-banner-image.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 350px;    
+    height: 450px;    
 }
 
 
@@ -433,38 +434,7 @@
 }
 
 
-.row h2{
-    text-align: center;
-    font-size: 60px;
-    font-weight: 600;
-    margin: 50px 0px;
-}
 
-.aboutp-head{
-    font-size: 25px;
-    font-weight: 700;
-    text-align: center;
-    border-bottom: 3px solid black;
-}
-
-.aboutP-Content{
-    font-size: 16px;
-    font-weight: 600;
-    text-align: center;
-}
-
-.important-headline{
-    color: rgb(231, 210, 21);
-    font-size: 16px;
-    text-align: center;
-    font-weight: 700;
-}
-
-.about-f{
-    font-size: 16px;
-    text-align: center;
-    font-weight: 600;
-}
 
 .top-4c {
     font-size: 40px;
@@ -478,19 +448,61 @@
 }
 
 
+ .aboutp-head{
+    font-weight: 700;
+    font-size: 20px;
+ }
+
+ .important-headline {
+    color: #FF0000;
+ }
+
+ .aboutP-Content{
+   font-size: 15px;
+ }
+
+ .aus{
+    font-size: 40px;
+    font-weight: 700;
+ }
+
+
+ /* Animation keyframe css */
+
+ .animation-frame{
+    animation: movex 5s linear infinite;
+ }
+ 
+
+
+
+
+ @keyframes movex {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(50px);
+     }
+     100%{
+        transform: translateX(0);
+     }
+
+}
 
 
 @media only screen and (max-width: 600px) {
     .about-section{
-        height: 400px;
+        height: 300px;
     }
 
     .about-section h1{
         font-size: 50px;
     }
 
-    #about-title{
-        font-size: 45px;
+    .aus{
+        font-size: 40px;
+        margin: 20px;
     }
     
     .aboutp-head{
@@ -505,6 +517,19 @@
     .top-4p{
         text-align: center;
     }
+
+    .about-travel{
+        width: 100%;
+    }
+
+    .about-section{
+        background:linear-gradient(rgba(0, 0, 0, 0.218), rgba(0, 0, 0, 0.284)),  url('../images/about-banner-image.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 30px;    
+    }
+    
 }
 
 
@@ -525,7 +550,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 350px;
+    height: 450px;
     
 }
 
@@ -563,17 +588,25 @@
 
 
 
-.services-swiper{
+
+
+/*  ------service-swiper-----------*/
+
+
+
+ 
+   
+ .services-swiper{
     font-size: 40px;
     font-weight: 700;
     text-align: center;
 }
 
-.desc{
- text-align: center;
- line-height: 30px;
+ .desc{
+    text-align: center;
+    line-height: 30px;
+ }
 
-}
 
 .swiper-tophead{
 
@@ -585,6 +618,7 @@
     
 }
 
+  
 .swiper-wrapper  > div{
     width: 100%;
     transition: all 0.5s ease-in;
@@ -640,12 +674,11 @@
 
 @media only screen and (max-width: 600px) {
     .service-section{
-        background:linear-gradient(rgba(0, 0, 0, 0.192), rgba(0, 0, 0, 0.358)),  url('../images/service-banner.jpg');
+        background-image:linear-gradient(rgba(0, 0, 0, 0.192), rgba(0, 0, 0, 0.358)),  url('../images/service-banner.jpg');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        height: 400px;
-        
+        height: 300px;    
     }
 
     
@@ -690,12 +723,11 @@
  padding: 20px 10px;
 }
 
-
+.swiper-tophead{
+    font-size: 17px;
 }
 
-
-
-
+}
 
 
 
@@ -712,7 +744,7 @@
 
 .Contact-section{
     height: 450px;
-    background: linear-gradient(rgba(0, 0, 0, 0.066), rgba(0, 0, 0, 0.355)),  url('../images/contact-banner.jpeg');
+    background: linear-gradient(rgba(0, 0, 0, 0.482), rgba(0, 0, 0, 0.504)),  url('../images/contact-banner.jpeg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -768,7 +800,7 @@
 
 @media only screen and (max-width: 600px) {
     .Contact-section{
-        height: 400px;
+        height: 300px;
         background: linear-gradient(rgba(0, 0, 0, 0.066), rgba(0, 0, 0, 0.355)),  url('../images/contact-banner.jpeg');
         background-size: cover;
         background-position: center;
@@ -818,37 +850,13 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Career- section */
 
 
  
 .Career-section{
-    height: 400px;
-    background: linear-gradient(rgba(0, 0, 0, 0.468), rgba(0, 0, 0, 0.485)),  url('../images/career-banner.avif');
+    height: 450px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.468), rgba(0, 0, 0, 0.485)),  url('../images/career-banner.avif');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -883,9 +891,9 @@
 @media only screen and (max-width: 600px) {
 
     .Career-section{
-        height: 400px;
+        height: 300px;
         width: 100%;
-        background: linear-gradient(rgba(0, 0, 0, 0.066), rgba(0, 0, 0, 0.355)),  url('../images/career-banner.avif');
+        background-image: linear-gradient(rgba(0, 0, 0, 0.46), rgba(0, 0, 0, 0.438)),  url('../images/career-banner.avif');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -907,8 +915,15 @@
    .Tourism-translate{
     transform: translateX(-0%);
 }
-  
 
+
+ .Tourism-secondbox{
+    transform: translateX(-0%);
+ }
+
+ .TMP{
+    font-size: 20px;
+ }
     
 
 }
@@ -923,8 +938,8 @@
 
  
 .Membership-section{
-    height: 500px;
-    background: linear-gradient(rgba(0, 0, 0, 0.582), rgba(0, 0, 0, 0.478)),  url('../images/MEMBERSHIP-BANNER.jpg');
+    height: 450px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.582), rgba(0, 0, 0, 0.478)),  url('../images/MEMBERSHIP-BANNER.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -957,7 +972,7 @@
 
 .Membership-Buy{
         height: 550px;
-        background: linear-gradient(rgba(0, 0, 0, 0.67), rgba(0, 0, 0, 0.719)),  url('../images/membership-B-buy.jpeg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.67), rgba(0, 0, 0, 0.719)),  url('../images/membership-B-buy.jpeg');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -969,7 +984,7 @@
  /* membership card designs */
  .flex-row{
     display: flex;
-    gap: 20px;
+    gap: 50px;
     justify-content: space-between;
     align-items: center;
 
@@ -1109,9 +1124,12 @@ font-size: 15px !important;
       flex-direction: column !important;
     }
 
+  
+  
+  
     .Membership-Buy{
         height: 100%;
-        background: linear-gradient(rgba(0, 0, 0, 0.227), rgba(0, 0, 0, 0.195)),  url('../images/membership-B-buy.jpeg');
+        background-image: linear-gradient(rgba(0, 0, 0, 0.227), rgba(0, 0, 0, 0.195)),  url('../images/membership-B-buy.jpeg');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -1120,18 +1138,15 @@ font-size: 15px !important;
 
     
     .Membership-section{
-        height: 400px;
-        background: linear-gradient(rgba(0, 0, 0, 0.582), rgba(0, 0, 0, 0.478)),  url('../images/MEMBERSHIP-BANNER.jpg');
+        height: 300px;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.582), rgba(0, 0, 0, 0.478)),  url('../images/MEMBERSHIP-BANNER.jpg');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
         
     }
 
-    .Membership-head{
-        font-size: 40px;
-    }
-
+   
     .membership-card{
         margin: 13px 0px;
     }
@@ -1140,38 +1155,22 @@ font-size: 15px !important;
         font-size: 14px;
     } 
 
+    
+    .Membership-head{
+        text-align: center;
+        font-size: 30px;
+        font-weight: 700;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+       }
+
+       .Membership-section p{
+     font-size: 14px;
  }
 
-
-    
-
-
-
-
-
-   
-
-  
-  
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ }
 
 
 
@@ -1243,13 +1242,13 @@ font-size: 15px !important;
 
 
 .Terms-Condition-section{
-    background: linear-gradient(rgba(0, 0, 0, 0.475), rgba(0, 0, 0, 0.3)),  url('../images/term-c-banner.avif');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.475), rgba(0, 0, 0, 0.3)),  url('../images/term-c-banner.avif');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     justify-content: center;
     align-items: center;
-    height: 500px;
+    height: 450px;
 }
 
  .Terms-Condition-section h1{
@@ -1271,7 +1270,7 @@ font-size: 15px !important;
 @media only screen and (max-width: 600px) {
 
     .Terms-Condition-section{
-        background: linear-gradient(rgba(0, 0, 0, 0.475), rgba(0, 0, 0, 0.3)),  url('../images/term-c-banner.avif');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.475), rgba(0, 0, 0, 0.3)),  url('../images/term-c-banner.avif');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -1322,7 +1321,7 @@ font-size: 15px !important;
 
 
 .Refund-policy-section{
-    background: linear-gradient(rgba(0, 0, 0, 0.562), rgba(0, 0, 0, 0.468)),  url('../images/refund-policy-banner.avif');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.562), rgba(0, 0, 0, 0.468)),  url('../images/refund-policy-banner.avif');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -1339,7 +1338,6 @@ font-size: 15px !important;
  }
 
   .refundp-header{
-
     font-size: 40px;
     font-weight: 700;
  }
@@ -1348,7 +1346,7 @@ font-size: 15px !important;
    @media only screen and (max-width: 600px) {
 
     .Refund-policy-section{
-        background: linear-gradient(rgba(0, 0, 0, 0.475), rgba(0, 0, 0, 0.3)),  url('../images/refund-policy-banner.avif');
+        background-image: linear-gradient(rgba(0, 0, 0, 0.475), rgba(0, 0, 0, 0.3)),  url('../images/refund-policy-banner.avif');
         background-position: center;
         background-repeat: no-repeat;
         justify-content: center;
@@ -1365,12 +1363,11 @@ font-size: 15px !important;
      }
     
      .refundp-header{
-
         font-size: 30px;
     }
     
    .lead{
-    font-size: 10px;
+    font-size: 15px !important;
    }
 
   
@@ -1378,17 +1375,18 @@ font-size: 15px !important;
 
 
 
+/* privacy-policy- section */
 
 
 .privacy-policy-section{
 
-    background:   url('../images/privacy-policy-banner.webp');
+    background-image:   url('../images/privacy-policy-banner.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     justify-content: center;
     align-items: center;
-    height: 500px;
+    height: 450px;
 }
 
  
@@ -1416,6 +1414,14 @@ font-size: 15px !important;
         height: 300px;
     }  
 
+    .privacy-undercontent{
+        font-size: 18px;
+    }
+
+    .p-p-c p{
+        padding: 0px 20px;
+    }
+ 
  }
 
  
@@ -1426,12 +1432,12 @@ font-size: 15px !important;
     
 /* Blog- section */
 
-.swiper {
+.myimagesslider {
     width: 100%;
     height: 100%;
   }
 
-  .swiper-slide {
+  .img-content {
     text-align: center;
     font-size: 18px;
     background: #fff;
@@ -1440,14 +1446,14 @@ font-size: 15px !important;
     align-items: center;
   }
 
-  .swiper-slide img {
+  .img-content img {
     display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
 
-  .swiper {
+  .myimagesslider{
     width: 100%;
     height: 300px;
     margin: 20px auto;
@@ -1455,22 +1461,12 @@ font-size: 15px !important;
 
 
 
-
   
 
-
+ /*  blog- swiper1 */
   .swiper {
     width: 100%;
     height: 100%;
-  }
-
-  .swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
 
   .swiper-slide img {
@@ -1485,10 +1481,7 @@ font-size: 15px !important;
 
 
 
-  .swiper {
-    width: 100%;
-    height: 100%;
-  }
+ 
 
   .swiper-slide {
     text-align: center;
@@ -1626,11 +1619,24 @@ font-size: 15px !important;
     font-weight: 700;
   }
 
+  .swiper-caption p{
+    padding: 0px 30px;
+  }
+
+   .main-top-container h1{
+    
+    font-size: 60px;
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 80px;
+  }
 
    @media only screen and (max-width: 600px) {
 
    .main-top-container h2{
-    font-size: 50px;
+    font-size: 30px;
    }
     
    .main-top-container p{
@@ -1643,7 +1649,7 @@ font-size: 15px !important;
     padding: 0px 20px;
  }
 
- .img-fluid{
+ .swi-img{
     width: 100%;
     height: 200px;
  }
@@ -1684,9 +1690,7 @@ font-size: 15px !important;
     font-size: 14px;
 }
 
- .swiper-caption h5{
-  font-size: 10px;
- }
+ 
 
  .cta-section{
     background-image: url('./images/cta-banner.jpeg'); 
@@ -1736,18 +1740,14 @@ font-size: 15px !important;
     padding: 60px;
   }
  
- .swiper-caption p{
+ .swiper-hpc p{
     font-size: 12px;
     padding: 0px 20px;
  }
 
- .swiper-caption h5{
-    font-size: 15px;
-    padding: 0px 10px;
- }
-
  
- .swiper-caption{
+ 
+ .swiper-hpc{
  height: 160px;
  }
   
@@ -1758,7 +1758,19 @@ font-size: 15px !important;
     object-fit: cover;
   }
 
+  .main-top-container h1{
+    margin: 20px;
+    font-size: 50px;
+  }
+
+  
+  .blog-p-c h5{
+    font-size: 13px;
+    padding: 0px 10px;
 }
+  }
+
+
 
 
 
@@ -1846,4 +1858,41 @@ font-size: 15px !important;
 
 
 
- kaise bnega haso mat tumne btaya ni hai muthe
+
+
+  /* swiper.php */
+
+  .swiper-container {
+    width: 100%;
+    height: 100%;
+  }
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .content-overlay {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 20px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    border-radius: 10px;
+  }
+  .swiper-button-next, .swiper-button-prev {
+    color: #007bff;
+  }
+
+
+
+ 

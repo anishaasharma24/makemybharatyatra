@@ -12,10 +12,10 @@
 
 
 
-<div class="container my-5 ">
-        <div class="card shadow">
+<div class="container refund-container my-4 ">
+        <div class="card ">
             <div class="card-body px-3">
-                <h2 class=" refundp-header  mb-4 mt-5 text-center">Refund Policy </h2>
+                <h2 class=" refundp-header  mb-4 mt-5 " style="text-align: center;">Refund Policy </h2>
                 <p class="lead" style="font-size: 20px; font-weight: 600; text-align: center;">At <strong>Make My Bharat Yatra</strong>, we strive to ensure a seamless and hassle-free experience for all our customers. However, we understand that sometimes plans change. Our refund policy is designed to be transparent and easy to follow. Please read the following guidelines carefully.</p>
                 
 

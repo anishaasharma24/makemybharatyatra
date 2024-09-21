@@ -9,8 +9,8 @@
 
 
 
-<div class="container Tourism-Manneger mt-5 mb-5 py-5">
-  <p class="TMP mt-5 mb-5 py-5">Joining BharatYatra offers a dynamic career opportunity in the vibrant travel industry. As part of our team, you’ll embark on a journey filled with growth, learning, and excitement.</p>
+<div class="container Tourism-Manneger mt-3 mb-5">
+  <p class="TMP mt-4 mb-5 py-2">Joining BharatYatra offers a dynamic career opportunity in the vibrant travel industry. As part of our team, you’ll embark on a journey filled with growth, learning, and excitement.</p>
   
   <div class="row mt-5 align-items-center">
     <div class="col-md-8">

@@ -14,8 +14,8 @@
 
 
 
-<div class="container  mt-5">
-        <h1 class="pheader mb-4 mt-5 py-5" style="text-align: center; font-weight: 700; font-size: 35px;">Privacy Policy</h1>
+<div class="container p-p-c  mt-5">
+        <h1 class="pheader mb-4 mt-5 py-2" style="text-align: center; font-weight: 700; font-size: 35px;">Privacy Policy</h1>
 
 
         <section id="introduction" class="mb-4 mt-5">
