@@ -924,9 +924,156 @@
  .TMP{
     font-size: 20px;
  }
+}
+
+
+
+ /* career-applynowform-section */
+
+
+
+  
+ .career-form-section h1{
+   color: whitesmoke;
+   font-size: 60px;
+   font-weight: 800;
+ }
+
+
+ .form-section{
+
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.323), rgba(0, 0, 0, 0.318)),  url('../images/form-backgroung-img.jpeg');
+    background-color: #007bff;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px 30px;
+}
+
+
+
+ .apply-form {
+    background: white;
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 20px 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 100%;
+}
+.apply-form h2 {
+    margin-bottom: 50px;
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: center;
+}
+.btn-primary {
+    width: 100%;
+}
+
+.form-label{
+    font-weight: 700;
+    font-size: 15px;
+}
+
+ .form-section h1{
+ font-size: 40px;
+ text-align: center;
+ color: white;
+ font-weight: 800;
+ padding-top: 30px;
+}
+
+.form-select {
+    font-size: 15px;
+    font-weight: 700;
+}
+
+
+
+
+/* From https://css.glass */
+.apply-form {
+/* From https://css.glass */
+background: rgba(255, 255, 255, 0.58);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(9.3px);
+-webkit-backdrop-filter: blur(9.3px);
+border: 1px solid rgba(255, 255, 255, 1);
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    .form-section h1{
+        font-size: 20px;
+       }
+
+       .apply-form {
+        background: white;
+        max-width: 700px;
+        margin: 40px auto;
+        padding: 20px 20px;
+        border-radius: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        height: 100%;
+    }
+
     
+    .form-section{
+   
+       height: 100%;
+       width: 100%;
+       padding: 10px 13px;
+   }
+   
+   .form-label{
+    font-weight: 700;
+    font-size: 10px;
+}
+
+ .form-select {
+    font-size: 10px;
+    font-weight: 700;
+}
+
+.apply-form h2{
+    font-size: 20px;
+}
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1503,18 +1650,6 @@ font-size: 15px !important;
 
 
 
-
-
-
-
-
-
-
-
-
-
- 
-
   
    .second-container{
     text-align: center;
@@ -1786,7 +1921,7 @@ font-size: 15px !important;
     color: white;
     align-items: center;
     justify-content: center;
-    height: 400px;
+    height: 450px;
     background-position: center;
     background-repeat: no-repeat; 
     background-size: cover;  
@@ -1855,6 +1990,117 @@ font-size: 15px !important;
     font-size: 20px;
     font-weight: 700;
   }
+
+  
+
+  @media only screen and (max-width: 600px) {
+
+    .hero-section {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.578), rgba(0, 0, 0, 0.584)), url('../images/himaliyaas-banner-img.jpg');                                                                     url('../images/himaliyaas-banner-img.jpg');
+        color: white;
+        align-items: center;
+        justify-content: center;
+        height: 300px;
+        background-position: center;
+        background-repeat: no-repeat; 
+        background-size: cover;  
+        display: flex;
+     }
+    
+    .content-section h2{
+        font-size: 20px;
+    }
+
+    .major-head h2{
+        font-size: 15px;
+    }
+
+     .major-content img{
+        height: 300px;
+    }
+
+    .activities-section h2{
+        font-size: 20px;
+    }
+
+    .activities-content h5{
+        font-size: 17px;
+    }
+
+    .tip-head{
+        font-size: 23px;
+    }
+     
+    .tips-content h5{
+        font-size: 17px;
+    }
+    }
+
+
+
+
+     /* royal-rajasthan-section */
+
+
+     .hero {
+        background: url('hero-image.jpg') no-repeat center center;
+        background-size: cover;
+        height: 100vh;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .hero h1 {
+        font-size: 4rem;
+        font-weight: bold;
+    }
+    .hero p {
+        font-size: 1.5rem;
+    }
+    .section-title {
+        font-size: 2rem;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+    .attraction-img {
+        height: 200px;
+        object-fit: cover;
+    }
+    .footer {
+        background-color: #333;
+        color: white;
+        padding: 30px 0;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
