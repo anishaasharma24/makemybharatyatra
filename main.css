@@ -1,11 +1,11 @@
+
+
 @import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 *{
     font-family: "Poppins", sans-serif;
     font-size: 14px;
 }
 .topbar button{
-    /* background-color: #c00 !important; */
-    /* background-color: #ECBD00 !important; */
     border: none;
     padding: 6px;
     letter-spacing: 1px;
@@ -154,6 +154,7 @@
 .movingX{
     animation: movingX 8s linear infinite;
 }
+
 
 
 @keyframes movingX {
@@ -406,11 +407,11 @@
 
 
   .about-section{
-    background:linear-gradient(rgba(0, 0, 0, 0.452), rgba(0, 0, 0, 0.452)),  url('../images/Banner\ About\ Us.jpg');
+    background:linear-gradient(rgba(0, 0, 0, 0.218), rgba(0, 0, 0, 0.284)),  url('../images/about-banner-image.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 350px;    
+    height: 450px;    
 }
 
 
@@ -423,17 +424,6 @@
     font-weight: 700;
 }
 
-   
-.aboutslider .swiper-wrapper{
-    gap: 20px;
-}
-
-.aboutslider  .swiper-slide img{
-object-fit: cover;
-height: 150px;
-margin: 20px;
-
-}
 
 
 .Abig-img img{
@@ -445,43 +435,12 @@ margin: 20px;
 
 
 
-.row h2{
-    text-align: center;
-    font-size: 60px;
-    font-weight: 600;
-    margin: 50px 0px;
-}
-
-.aboutp-head{
-    font-size: 25px;
-    font-weight: 700;
-    text-align: center;
-    border-bottom: 3px solid black;
-}
-
-.aboutP-Content{
-    font-size: 16px;
-    font-weight: 600;
-    text-align: center;
-}
-
-.important-headline{
-    color: rgb(231, 210, 21);
-    font-size: 16px;
-    text-align: center;
-    font-weight: 700;
-}
-
-.about-f{
-    font-size: 16px;
-    text-align: center;
-    font-weight: 600;
-}
 
 .top-4c {
     font-size: 40px;
     font-weight: 600;
 }
+
 
 .top-4p{
     font-size: 18px;
@@ -489,18 +448,61 @@ margin: 20px;
 }
 
 
+ .aboutp-head{
+    font-weight: 700;
+    font-size: 20px;
+ }
+
+ .important-headline {
+    color: #FF0000;
+ }
+
+ .aboutP-Content{
+   font-size: 15px;
+ }
+
+ .aus{
+    font-size: 40px;
+    font-weight: 700;
+ }
+
+
+ /* Animation keyframe css */
+
+ .animation-frame{
+    animation: movex 5s linear infinite;
+ }
+ 
+
+
+
+
+ @keyframes movex {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(50px);
+     }
+     100%{
+        transform: translateX(0);
+     }
+
+}
+
 
 @media only screen and (max-width: 600px) {
     .about-section{
-        height: 400px;
+        height: 300px;
     }
 
     .about-section h1{
         font-size: 50px;
     }
 
-    #about-title{
-        font-size: 45px;
+    .aus{
+        font-size: 40px;
+        margin: 20px;
     }
     
     .aboutp-head{
@@ -515,6 +517,19 @@ margin: 20px;
     .top-4p{
         text-align: center;
     }
+
+    .about-travel{
+        width: 100%;
+    }
+
+    .about-section{
+        background:linear-gradient(rgba(0, 0, 0, 0.218), rgba(0, 0, 0, 0.284)),  url('../images/about-banner-image.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 30px;    
+    }
+    
 }
 
 
@@ -535,7 +550,7 @@ margin: 20px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 350px;
+    height: 450px;
     
 }
 
@@ -573,17 +588,25 @@ margin: 20px;
 
 
 
-.services-swiper{
+
+
+/*  ------service-swiper-----------*/
+
+
+
+ 
+   
+ .services-swiper{
     font-size: 40px;
     font-weight: 700;
     text-align: center;
 }
 
-.desc{
- text-align: center;
- line-height: 30px;
+ .desc{
+    text-align: center;
+    line-height: 30px;
+ }
 
-}
 
 .swiper-tophead{
 
@@ -595,6 +618,7 @@ margin: 20px;
     
 }
 
+  
 .swiper-wrapper  > div{
     width: 100%;
     transition: all 0.5s ease-in;
@@ -650,12 +674,11 @@ margin: 20px;
 
 @media only screen and (max-width: 600px) {
     .service-section{
-        background:linear-gradient(rgba(0, 0, 0, 0.192), rgba(0, 0, 0, 0.358)),  url('../images/service-banner.jpg');
+        background-image:linear-gradient(rgba(0, 0, 0, 0.192), rgba(0, 0, 0, 0.358)),  url('../images/service-banner.jpg');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        height: 400px;
-        
+        height: 300px;    
     }
 
     
@@ -700,12 +723,11 @@ margin: 20px;
  padding: 20px 10px;
 }
 
-
+.swiper-tophead{
+    font-size: 17px;
 }
 
-
-
-
+}
 
 
 
@@ -722,7 +744,7 @@ margin: 20px;
 
 .Contact-section{
     height: 450px;
-    background: linear-gradient(rgba(0, 0, 0, 0.066), rgba(0, 0, 0, 0.355)),  url('../images/contact-banner.jpeg');
+    background: linear-gradient(rgba(0, 0, 0, 0.482), rgba(0, 0, 0, 0.504)),  url('../images/contact-banner.jpeg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -778,7 +800,7 @@ margin: 20px;
 
 @media only screen and (max-width: 600px) {
     .Contact-section{
-        height: 400px;
+        height: 300px;
         background: linear-gradient(rgba(0, 0, 0, 0.066), rgba(0, 0, 0, 0.355)),  url('../images/contact-banner.jpeg');
         background-size: cover;
         background-position: center;
@@ -828,37 +850,13 @@ margin: 20px;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Career- section */
 
 
  
 .Career-section{
-    height: 400px;
-    background: linear-gradient(rgba(0, 0, 0, 0.468), rgba(0, 0, 0, 0.485)),  url('../images/career-banner.avif');
+    height: 450px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.468), rgba(0, 0, 0, 0.485)),  url('../images/career-banner.avif');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -893,9 +891,9 @@ margin: 20px;
 @media only screen and (max-width: 600px) {
 
     .Career-section{
-        height: 400px;
+        height: 300px;
         width: 100%;
-        background: linear-gradient(rgba(0, 0, 0, 0.066), rgba(0, 0, 0, 0.355)),  url('../images/career-banner.avif');
+        background-image: linear-gradient(rgba(0, 0, 0, 0.46), rgba(0, 0, 0, 0.438)),  url('../images/career-banner.avif');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -917,11 +915,175 @@ margin: 20px;
    .Tourism-translate{
     transform: translateX(-0%);
 }
+
+
+ .Tourism-secondbox{
+    transform: translateX(-0%);
+ }
+
+ .TMP{
+    font-size: 20px;
+ }
+}
+
+
+
+ /* career-applynowform-section */
+
+
+
   
+ .career-form-section h1{
+   color: whitesmoke;
+   font-size: 60px;
+   font-weight: 800;
+ }
+
+
+ .form-section{
+
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.323), rgba(0, 0, 0, 0.318)),  url('../images/form-backgroung-img.jpeg');
+    background-color: #007bff;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px 30px;
+}
+
+
+
+ .apply-form {
+    background: white;
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 20px 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 100%;
+}
+.apply-form h2 {
+    margin-bottom: 50px;
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: center;
+}
+.btn-primary {
+    width: 100%;
+}
+
+.form-label{
+    font-weight: 700;
+    font-size: 15px;
+}
+
+ .form-section h1{
+ font-size: 40px;
+ text-align: center;
+ color: white;
+ font-weight: 800;
+ padding-top: 30px;
+}
+
+.form-select {
+    font-size: 15px;
+    font-weight: 700;
+}
+
+
+
+
+/* From https://css.glass */
+.apply-form {
+/* From https://css.glass */
+background: rgba(255, 255, 255, 0.58);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(9.3px);
+-webkit-backdrop-filter: blur(9.3px);
+border: 1px solid rgba(255, 255, 255, 1);
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    .form-section h1{
+        font-size: 20px;
+       }
+
+       .apply-form {
+        background: white;
+        max-width: 700px;
+        margin: 40px auto;
+        padding: 20px 20px;
+        border-radius: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        height: 100%;
+    }
 
     
-
+    .form-section{
+   
+       height: 100%;
+       width: 100%;
+       padding: 10px 13px;
+   }
+   
+   .form-label{
+    font-weight: 700;
+    font-size: 10px;
 }
+
+ .form-select {
+    font-size: 10px;
+    font-weight: 700;
+}
+
+.apply-form h2{
+    font-size: 20px;
+}
+
+.apply-form {
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.58);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9.3px);
+    -webkit-backdrop-filter: blur(9.3px);
+    border: 1px solid rgba(255, 255, 255, 1);
+    }
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -933,8 +1095,8 @@ margin: 20px;
 
  
 .Membership-section{
-    height: 500px;
-    background: linear-gradient(rgba(0, 0, 0, 0.582), rgba(0, 0, 0, 0.478)),  url('../images/MEMBERSHIP-BANNER.jpg');
+    height: 450px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.582), rgba(0, 0, 0, 0.478)),  url('../images/MEMBERSHIP-BANNER.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -967,7 +1129,7 @@ margin: 20px;
 
 .Membership-Buy{
         height: 550px;
-        background: linear-gradient(rgba(0, 0, 0, 0.67), rgba(0, 0, 0, 0.719)),  url('../images/membership-B-buy.jpeg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.67), rgba(0, 0, 0, 0.719)),  url('../images/membership-B-buy.jpeg');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -979,7 +1141,7 @@ margin: 20px;
  /* membership card designs */
  .flex-row{
     display: flex;
-    gap: 20px;
+    gap: 50px;
     justify-content: space-between;
     align-items: center;
 
@@ -1076,12 +1238,6 @@ margin: 20px;
     padding: 10px 30px;
     border-radius: 0px;
  }
-
-
-
-
-    
-       
        
 
    .membership-card{
@@ -1125,9 +1281,12 @@ font-size: 15px !important;
       flex-direction: column !important;
     }
 
+  
+  
+  
     .Membership-Buy{
         height: 100%;
-        background: linear-gradient(rgba(0, 0, 0, 0.227), rgba(0, 0, 0, 0.195)),  url('../images/membership-B-buy.jpeg');
+        background-image: linear-gradient(rgba(0, 0, 0, 0.227), rgba(0, 0, 0, 0.195)),  url('../images/membership-B-buy.jpeg');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -1136,18 +1295,15 @@ font-size: 15px !important;
 
     
     .Membership-section{
-        height: 400px;
-        background: linear-gradient(rgba(0, 0, 0, 0.582), rgba(0, 0, 0, 0.478)),  url('../images/MEMBERSHIP-BANNER.jpg');
+        height: 300px;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.582), rgba(0, 0, 0, 0.478)),  url('../images/MEMBERSHIP-BANNER.jpg');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
         
     }
 
-    .Membership-head{
-        font-size: 40px;
-    }
-
+   
     .membership-card{
         margin: 13px 0px;
     }
@@ -1156,66 +1312,22 @@ font-size: 15px !important;
         font-size: 14px;
     } 
 
+    
+    .Membership-head{
+        text-align: center;
+        font-size: 30px;
+        font-weight: 700;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+       }
+
+       .Membership-section p{
+     font-size: 14px;
  }
 
-
-    
-
-
-
-
-
-   
-/* Blog- section */
-
-.swiper {
-    width: 100%;
-    height: 100%;
-  }
-
-  .swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
-  .swiper {
-    width: 100%;
-    height: 300px;
-    margin: 20px auto;
-  }
-
-  
-  
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ }
 
 
 
@@ -1287,13 +1399,13 @@ font-size: 15px !important;
 
 
 .Terms-Condition-section{
-    background: linear-gradient(rgba(0, 0, 0, 0.475), rgba(0, 0, 0, 0.3)),  url('../images/term-c-banner.avif');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.475), rgba(0, 0, 0, 0.3)),  url('../images/term-c-banner.avif');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     justify-content: center;
     align-items: center;
-    height: 500px;
+    height: 450px;
 }
 
  .Terms-Condition-section h1{
@@ -1315,7 +1427,7 @@ font-size: 15px !important;
 @media only screen and (max-width: 600px) {
 
     .Terms-Condition-section{
-        background: linear-gradient(rgba(0, 0, 0, 0.475), rgba(0, 0, 0, 0.3)),  url('../images/term-c-banner.avif');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.475), rgba(0, 0, 0, 0.3)),  url('../images/term-c-banner.avif');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -1366,7 +1478,7 @@ font-size: 15px !important;
 
 
 .Refund-policy-section{
-    background: linear-gradient(rgba(0, 0, 0, 0.562), rgba(0, 0, 0, 0.468)),  url('../images/refund-policy-banner.avif');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.562), rgba(0, 0, 0, 0.468)),  url('../images/refund-policy-banner.avif');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -1383,7 +1495,6 @@ font-size: 15px !important;
  }
 
   .refundp-header{
-
     font-size: 40px;
     font-weight: 700;
  }
@@ -1392,13 +1503,13 @@ font-size: 15px !important;
    @media only screen and (max-width: 600px) {
 
     .Refund-policy-section{
-        background: linear-gradient(rgba(0, 0, 0, 0.475), rgba(0, 0, 0, 0.3)),  url('../images/refund-policy-banner.avif');
-        background-size: cover;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.475), rgba(0, 0, 0, 0.3)),  url('../images/refund-policy-banner.avif');
         background-position: center;
         background-repeat: no-repeat;
         justify-content: center;
         align-items: center;
         height: 300px;
+        background-size: cover;
     }
     
 
@@ -1409,12 +1520,11 @@ font-size: 15px !important;
      }
     
      .refundp-header{
-
         font-size: 30px;
     }
     
    .lead{
-    font-size: 10px;
+    font-size: 15px !important;
    }
 
   
@@ -1422,17 +1532,18 @@ font-size: 15px !important;
 
 
 
+/* privacy-policy- section */
 
 
 .privacy-policy-section{
 
-    background:   url('../images/privacy-policy-banner.webp');
+    background-image:   url('../images/privacy-policy-banner.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     justify-content: center;
     align-items: center;
-    height: 500px;
+    height: 450px;
 }
 
  
@@ -1458,11 +1569,894 @@ font-size: 15px !important;
         justify-content: center;
         align-items: center;
         height: 300px;
+    }  
+
+    .privacy-undercontent{
+        font-size: 18px;
     }
 
-   
-     
-
+    .p-p-c p{
+        padding: 0px 20px;
+    }
+ 
  }
 
  
+
+
+
+
+    
+/* Blog- section */
+
+.myimagesslider {
+    width: 100%;
+    height: 100%;
+  }
+
+  .img-content {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .img-content img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .myimagesslider{
+    width: 100%;
+    height: 300px;
+    margin: 20px auto;
+  }
+
+
+
+  
+
+ /*  blog- swiper1 */
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+
+
+
+
+
+ 
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 300px !important;
+    object-fit: cover;
+  }
+
+
+
+
+
+  
+   .second-container{
+    text-align: center;
+   }
+
+   .img-fluid{
+    width: 100%;
+    height: 500px;
+   }
+
+   .s-container h3{
+    font-size: 30px;
+    font-weight: 600;
+    margin: 20px 0px;
+   }
+
+
+
+
+   .tip-icon {
+    font-size: 40px;
+    color: #007bff;
+  }
+  .tip-content {
+    margin-top: 20px;
+  }
+  .tip-title {
+    font-weight: bold;
+    color: #007bff;
+  }
+  .tip-description {
+    margin-top: 10px;
+  }
+
+
+
+  .travel-tips-container {
+    margin: 50px 0px;
+  } 
+
+  .travelt-icon i {
+    font-size: 50px;
+    color: red;
+  }
+
+
+
+
+
+
+
+
+  .cta-section {
+    background-color: rgba(89, 89, 252, 0.522);
+    padding: 100px 0;
+    color: white;
+  }
+  .cta-overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 50px;
+  }
+  .cta-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  .cta-btn {
+    background-color: #ff5722;
+    color: white;
+    font-weight: bold;
+    padding: 15px 30px;
+    border-radius: 50px;
+  }
+  .cta-btn:hover {
+    background-color: #e64a19;
+    color: #fff;
+  }
+
+
+
+  .overlay-text{
+    line-height: 40px;
+  }
+
+  .overlay-text h2{
+    font-size: 40px;
+    font-weight: 700;
+ 
+  }
+
+  .overlay-text p{
+
+    font-size: 20px;
+  }
+
+  
+   .call-to-action{
+    margin: 60px 0px;
+  }
+
+  .swiper-caption h5{
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  .swiper-caption p{
+    padding: 0px 30px;
+  }
+
+   .main-top-container h1{
+    
+    font-size: 60px;
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 80px;
+  }
+
+   @media only screen and (max-width: 600px) {
+
+   .main-top-container h2{
+    font-size: 30px;
+   }
+    
+   .main-top-container p{
+ 
+    text-align: center;
+    padding: 0px 10px;
+ }
+
+ .second-container {
+    padding: 0px 20px;
+ }
+
+ .swi-img{
+    width: 100%;
+    height: 200px;
+ }
+
+ .s-container h3{
+    font-size: 20px;
+ }
+
+ .s-container p{
+    font-size: 12px;
+ }
+
+
+ .destination{
+   height: 200px;
+   text-align: center;
+   align-items: center;
+ }
+ .destination h1{
+    font-size: 25px;
+    
+ }
+ 
+ .destination p{
+ margin: 30px 0px;
+ font-size: 15px;
+ }
+
+ .mtext{
+    font-size: 15px;
+ }
+
+.explore h2{
+    font-size: 20px;
+}
+
+.lead{
+    font-size: 14px;
+}
+
+ 
+
+ .cta-section{
+    background-image: url('./images/cta-banner.jpeg'); 
+    height: 300px !important; 
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: cover;  
+ }
+
+
+  .overlay-text{
+    line-height: 20px;
+  }
+
+ .overlay-text h2{
+  font-size: 16px;
+ }
+
+  .overlay-text p{
+
+    font-size: 12px;
+ }
+
+ 
+ .cta-title{
+    font-size: 15px;
+ }
+ 
+ .call-p{
+    font-size: 10px;
+ }
+
+ .cta-btn{
+    font-size: 9px;
+ }
+
+ .call-to-action {
+   margin-bottom: 50px;
+ }
+
+ .cta-section {
+    padding: 10px 0;
+    color: white;
+  }
+
+  .overlay-text{
+    padding: 60px;
+  }
+ 
+ .swiper-hpc p{
+    font-size: 12px;
+    padding: 0px 20px;
+ }
+
+ 
+ 
+ .swiper-hpc{
+ height: 160px;
+ }
+  
+ .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 200px !important;
+    object-fit: cover;
+  }
+
+  .main-top-container h1{
+    margin: 20px;
+    font-size: 50px;
+  }
+
+  
+  .blog-p-c h5{
+    font-size: 13px;
+    padding: 0px 10px;
+}
+  }
+
+
+
+
+
+
+
+
+/* majestic himalayas */
+
+
+ 
+.hero-section {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.578), rgba(0, 0, 0, 0.584)), url('../images/himaliyaas-banner-img.jpg');                                                                     url('../images/himaliyaas-banner-img.jpg');
+    color: white;
+    align-items: center;
+    justify-content: center;
+    height: 450px;
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: cover;  
+    display: flex;
+ }
+
+  
+  .hero-overlay {
+    padding: 50px;
+    text-align: center;
+  }
+  .hero-title {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  .content-section h2 {
+    color: #007bff;
+    margin-bottom: 20px;
+    font-size: 40px;
+  }
+  .content-section p {
+    margin-bottom: 20px;
+  }
+  .activities-section {
+    background-color: #f8f9fa;
+    padding: 50px 0;
+  }
+
+  .activity-icon {
+    font-size: 3rem;
+    color: #007bff;
+  }
+  .tip-section {
+    background-color: #e9ecef;
+    padding: 50px;
+  }
+
+   .major-head h2 {
+   font-size: 30px;
+    font-weight: 700;
+  }
+
+  .major-content h5{
+    font-weight: 700;
+   font-size: 20px;
+  }
+
+  .activities-section  h2{
+    font-size: 30px;
+    font-weight: 700;
+
+  }
+
+  .activities-content h5{
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  .tip-head{
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  .tips-content h5{
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  
+
+  @media only screen and (max-width: 600px) {
+
+    .hero-section {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.578), rgba(0, 0, 0, 0.584)), url('../images/himaliyaas-banner-img.jpg');                                                                     url('../images/himaliyaas-banner-img.jpg');
+        color: white;
+        align-items: center;
+        justify-content: center;
+        height: 300px;
+        background-position: center;
+        background-repeat: no-repeat; 
+        background-size: cover;  
+        display: flex;
+     }
+    
+    .content-section h2{
+        font-size: 20px;
+    }
+
+    .major-head h2{
+        font-size: 15px;
+    }
+
+     .major-content img{
+        height: 300px;
+    }
+
+    .activities-section h2{
+        font-size: 20px;
+    }
+
+    .activities-content h5{
+        font-size: 17px;
+    }
+
+    .tip-head{
+        font-size: 23px;
+    }
+     
+    .tips-content h5{
+        font-size: 17px;
+    }
+    }
+
+
+
+
+     /* royal-rajasthan-section */
+
+
+     .rajasthan-section {
+        background: linear-gradient(rgba(0, 0, 0, 0.578), rgba(0, 0, 0, 0.584)), url('../images/rajsthan-banner-img.jpeg') no-repeat center center;
+        background-size: cover;
+        height: 450px;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+     }
+
+       
+    .hero h1 {
+        font-size: 4rem;
+        font-weight: bold;
+    }
+    .hero p {
+        font-size: 1.5rem;
+    }
+    .section-title {
+        font-size: 2rem;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+    .attraction-img {
+        height: 200px;
+        object-fit: cover;
+    }
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* swiper.php */
+
+  .swiper-container {
+    width: 100%;
+    height: 100%;
+  }
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .content-overlay {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 20px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    border-radius: 10px;
+  }
+  .swiper-button-next, .swiper-button-prev {
+    color: #007bff;
+  }
+
+
+
+ 
+
+
+
+    /* delhi-destination-section-start */
+
+   .delhi-banner-section{
+    background: linear-gradient(rgba(0, 0, 0, 0.466), rgba(0, 0, 0, 0.444)), url('../images/delhi-banner.jpeg') no-repeat center center;
+    background-size: cover;
+    height: 500px;
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+ }
+
+ .travel-information-container{
+    margin-top: 50px;
+    }
+
+ 
+ @media only screen and (max-width: 600px) {
+
+    .delhi-destinations .col-md-3 img{   
+        height: auto !important;
+       }
+  
+    .delhi-banner-section{
+        background: linear-gradient(rgba(0, 0, 0, 0.466), rgba(0, 0, 0, 0.444)), url('../images/delhi-banner.jpeg') no-repeat center center;
+        background-size: cover;
+        height: 300px;
+        width: 100%;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+     }
+
+     .delhi-content{
+     padding: 0px 5px;
+     }
+
+  .ads img{
+    width: 100%;
+    height: 200px;
+  }
+
+  
+  .delhi-map {
+   width: 100%;
+   height: 100%;
+   margin-top: 30px;
+  }
+
+   .attraction-container h2{
+  padding-top: 50px;
+  }
+
+  
+
+ 
+ .travel-information-container{
+ margin-top: 80px;
+ }
+
+ .itineraries-container{
+    margin-top: 30px;
+   }
+ }
+
+
+ /* attraction-page-section */
+ .extra-images {
+    display: none;
+}
+
+     /* delhi-destination-section-end */
+
+
+
+
+
+     /* Goa tour-destination-section-start */
+
+     .goa-banner {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.466), rgba(0, 0, 0, 0.444)), url('../images/goa-banner-img.jpg'); 
+        background-size: cover;
+        background-position: center;
+        height: 500px;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+  
+      .goa-banner h1 {
+        font-size: 3rem;
+        font-weight: bold;
+      }
+  
+     .gallary-container img {
+        width: 100%;
+        height: auto;
+        transition: transform 0.3s;
+      }
+  
+    .gallary-container img:hover {
+        transform: scale(1.1);
+      }
+
+      .fa-umbrella-beach{
+        font-size: 40px;
+        color: #ff5722;
+      }
+
+      .bi-tree{
+       font-size: 40px;
+       color: rgb(85, 150, 19);
+      }
+
+      .bi-cup-straw{
+        font-size: 40px;
+        color: brown;
+      }
+
+
+      @media only screen and (max-width: 600px) {
+
+        .goa-banner {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.466), rgba(0, 0, 0, 0.444)), url('../images/goa-banner-img.jpg'); 
+            background-size: cover;
+            background-position: center;
+            height: 300px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+          }
+
+          .goa-container img{
+            width: 100%;
+          }
+      }
+
+
+      /* Goa tour-destination-section-end */
+
+
+
+
+
+
+
+
+ /* manalitour-destination-section-start */
+ .manali-banner {
+    background:  linear-gradient(rgba(0, 0, 0, 0.573), rgba(0, 0, 0, 0.534)), url('../images/manali-tour-banner.jpg') no-repeat center center/cover;
+    height: 70vh;
+    color: white;
+  }
+  .section-title {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+  .package-card img {
+    height: 200px;
+    object-fit: cover;
+  }
+  
+ /* manalitour-destination-section-end */
+
+
+
+
+
+ 
+ /* coimbatore-destination-section-start */
+
+ .kerala-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.382), rgba(0, 0, 0, 0.366)), url('../images/kerala-banner.jpg') no-repeat center center/cover;
+    height: 70vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.kerala-section h1 {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.about-section img {
+    max-width: 300px;
+    height: auto;
+}
+
+.card {
+    border: none;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+ 
+ /* keralatour-destination-section-end */
+
+
+
+
+
+ /*coimbatore-destination-section-start */
+
+
+
+ .coimbatore-section{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.562), rgba(0, 0, 0, 0.468)), url('../images/coimbatore-banner.webp');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.coimbatore-section  h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+
+.coimbatore-section  p {
+    font-size: 1.5rem;
+}
+
+.icon {
+    font-size: 2rem;
+}
+
+.card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+
+.booking-form {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+ /* coimbatore-destination-section-end */
+
+
+
+
+
+
+  /*mussoorie-destination-section-start */
+
+  .mussoorie-section {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.562), rgba(0, 0, 0, 0.468)), url('../images/mussoorie-banner.jfif');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.mussoorie-section h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.mussoorie-section p {
+    font-size: 1.5rem;
+}
+
+.icon {
+    font-size: 2rem;
+}
+
+.card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.booking-form {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+   /*mussoorie-destination-section-start */
